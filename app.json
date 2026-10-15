@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "guardViewD",
+    "slug": "guardViewD",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.thiago1984.guardViewD",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permitir que o GuardViewD use sua localização para mostrar sua posição no mapa.",
+          "locationAlwaysAndWhenInUsePermission": "Permitir que o GuardViewD use sua localização para acompanhar alertas e centralizar o mapa."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "16740da6-583f-473b-a6a8-4725ea089667"
+      }
+    },
+    "owner": "haagsmathiagos-team"
+  }
+}
